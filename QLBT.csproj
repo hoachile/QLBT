@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3D56CCF-9F05-4B10-92A2-3B50FA3F7FC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBT</RootNamespace>
+    <AssemblyName>QLBT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BCHsd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCHsd.Designer.cs">
+      <DependentUpon>BCHsd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsMain.cs" />
+    <Compile Include="DsHdban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsHdban.Designer.cs">
+      <DependentUpon>DsHdban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsHdNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DsHdNhap.Designer.cs">
+      <DependentUpon>DsHdNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaocaoBanViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaocaoBanViewer.Designer.cs">
+      <DependentUpon>frmBaocaoBanViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaocaoHangtonViewercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaocaoHangtonViewercs.Designer.cs">
+      <DependentUpon>frmBaocaoHangtonViewercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaocaoNhapViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaocaoNhapViewer.Designer.cs">
+      <DependentUpon>frmBaocaoNhapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInBCTonghop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInBCTonghop.Designer.cs">
+      <DependentUpon>frmInBCTonghop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThdoanhthuViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThdoanhthuViewer.Designer.cs">
+      <DependentUpon>frmThdoanhthuViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien.Designer.cs">
+      <DependentUpon>Giaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HdBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HdBan.Designer.cs">
+      <DependentUpon>HdBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HdNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HdNhap.Designer.cs">
+      <DependentUpon>HdNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khachhang.Designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaCC.Designer.cs">
+      <DependentUpon>NhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBTDataSet.cs">
+      <DependentUpon>QLBTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLBTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rptBcHangton.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBcHangton.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHdBan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHdBan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptHdNhap1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHdNhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptTongHopDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTongHopDT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Thuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thuoc.Designer.cs">
+      <DependentUpon>Thuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHdBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHdBan.Designer.cs">
+      <DependentUpon>UpdateHdBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHdNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHdNhap.Designer.cs">
+      <DependentUpon>UpdateHdNhap.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BCHsd.resx">
+      <DependentUpon>BCHsd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsHdban.resx">
+      <DependentUpon>DsHdban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DsHdNhap.resx">
+      <DependentUpon>DsHdNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaocaoBanViewer.resx">
+      <DependentUpon>frmBaocaoBanViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaocaoHangtonViewercs.resx">
+      <DependentUpon>frmBaocaoHangtonViewercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaocaoNhapViewer.resx">
+      <DependentUpon>frmBaocaoNhapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInBCTonghop.resx">
+      <DependentUpon>frmInBCTonghop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThdoanhthuViewer.resx">
+      <DependentUpon>frmThdoanhthuViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien.resx">
+      <DependentUpon>Giaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HdBan.resx">
+      <DependentUpon>HdBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HdNhap.resx">
+      <DependentUpon>HdNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCC.resx">
+      <DependentUpon>NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rptBcHangton.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBcHangton.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHdBan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHdBan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptHdNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHdNhap1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptTongHopDT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTongHopDT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thuoc.resx">
+      <DependentUpon>Thuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHdBan.resx">
+      <DependentUpon>UpdateHdBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHdNhap.resx">
+      <DependentUpon>UpdateHdNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLBTDataSet.xsc">
+      <DependentUpon>QLBTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLBTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBTDataSet.xss">
+      <DependentUpon>QLBTDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
